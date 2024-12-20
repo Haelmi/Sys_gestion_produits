@@ -1,0 +1,585 @@
+/* public/css/style.css */
+
+/*--------------- view  welcome  css  ----------------*/
+body {
+  background-color: rgb(156, 197, 255);
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.home-icon {
+    font-size: 30px;
+    color: #000000;
+    text-decoration: none;
+    margin-left: 75px;
+    margin-top:20px;
+}
+
+.home-icon:hover {
+    color: #0056b3;
+}
+
+h1 {
+    text-shadow: 5px 5px 5px rgb(66, 160, 237);
+    margin-top: 250px;
+    text-align: center;
+    font-size: 75px;
+    color: #102dd3;
+}
+
+div.navbar{
+    text-align: center;
+    padding: 25px 25px 25px 25px;
+    border: 7px solid blue ;
+    border-radius: 10px;
+}
+
+div.navbar a{
+    text-decoration: none;
+    font-style: bold;
+    color: blue;
+    font-size: 30px;
+    padding: 275px;
+}
+
+div.navbar a:hover{
+    color: rgb(178, 75, 237);
+}
+
+
+
+/* ------------- view  products  css ---------------*/
+div.products_header{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+    padding: 0px; /* small padding */
+    line-height: 0;
+    margin-bottom: 20px;
+    border: 7px solid blue ;
+    border-radius: 10px;
+}
+
+div.products_header h3{
+    margin-left: 665px;
+}
+
+button.create_product_btn{
+    margin-left: 50px;
+    padding: 0px 10px 0px 10px;
+    font-size: 35px;
+    border-radius: 10px;
+    border: 2px solid;
+   
+}
+
+button.create_product_btn:hover{
+    background-color: greenyellow;
+    cursor:pointer;
+    box-shadow: 5px 5px 10px;
+}
+
+div.products_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.products_container a{
+    text-decoration: none;
+    color: black;
+}
+
+.delete-product {
+    background: none;
+    border: none;
+    color: #ff0000; /* Red color for delete */
+    font-size: 25px; /* Adjust icon size */
+    cursor: pointer;
+    position:fixed;
+    margin-left: 275px;
+    margin-top:25px;
+}
+
+.delete-product:hover {
+    color: #cc0000; 
+}
+
+div.products{
+    font-size: 18px;
+    border: 7px solid;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    width: 300px;           
+    height: 500px;          
+    box-sizing: border-box; 
+    box-shadow: 5px 5px;
+}
+
+div.products .product_info{
+    width: 100%;                   
+    height: auto;                  
+    padding: 10px;
+    text-align: center;            
+    word-wrap: break-word;         
+    overflow: hidden;              
+    text-overflow: ellipsis;      
+    white-space: normal;           
+}
+
+div.products .product_image{
+    width: 160px;              
+    height: 160px;            
+    display: flex;
+    align-items: center;      
+    justify-content: center;  
+    margin-bottom: 15px;
+    position:fixed;
+    bottom: 185px;
+    overflow: hidden;          
+    border-radius: 5px;        
+ 
+}
+
+div.products .product_image img{
+    max-width: 100%;         
+    max-height: 100%;         
+    object-fit: cover;         
+}
+
+.pagination {
+    display: flex;
+    list-style-type: none;
+    margin-left: 335px;
+    position: fixed;
+    bottom: 43px;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination li a,
+.pagination li span {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #007bff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination li a:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.pagination .active span {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.pagination .disabled span {
+    color: #6c757d;
+    cursor: not-allowed;
+}
+
+
+/*-------------- view  product_creation  css ------------------*/
+.prod_creation_header{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+    padding: 0px; /* small padding */
+    line-height: 0;
+    margin-bottom: 20px;
+    border: 7px solid blue ;
+    border-radius: 10px;
+}
+
+.prod_creation_header h3{
+    margin-left: 600px;
+}
+
+
+
+table.product_creation_form{
+    
+     border: 7px solid blue;
+     position:fixed;
+     margin-left: 450px;
+     margin-top:30px;
+     font-size: 26px;
+     width:770px;
+     border-radius: 70px;
+     color: blue;
+}
+
+table.product_creation_form tr td{
+    padding: 30px 20px 20px 35px;
+
+}
+
+table.product_creation_form tr label{
+    padding-right: 30px;
+}
+
+table.product_creation_form tr td input{
+    height: 28px;
+    width: 395px;
+    border-radius: 70px;
+    margin-right: 10px;
+    border: 3px solid blue;
+}
+
+table.product_creation_form tr td input#image{
+    border: none;
+    font-size: 18px;
+    width:430px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+table.product_creation_form tr td select{
+    height: 35px;
+    width: 400px;
+    margin-top:33px;
+    border-radius: 70px;
+}
+
+button.prod_creation_submit{
+      position: fixed;
+      margin-left:720px;
+      margin-top:625px;
+      font-size: 28px;
+      padding: 10px 20px 10px 20px;
+      border-radius: 70px;
+      background-color: greenyellow;
+      border-color: greenyellow;
+      box-shadow: 5px 5px 10px;
+      cursor: pointer;
+}
+
+button.prod_creation_submit:hover{
+    font-size: 30px;
+}
+
+
+
+/*---------------- view product_update css ----------------*/
+
+.prod_update_header{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+    padding: 0px; /* small padding */
+    line-height: 0;
+    margin-bottom: 20px;
+    border: 7px solid blue ;
+    border-radius: 10px;
+}
+
+.prod_update_header h3{
+    margin-left: 600px;
+}
+
+table.product_update_form{
+    
+    border: 7px solid blue;
+    position:fixed;
+    margin-left: 450px;
+    margin-top:30px;
+    font-size: 26px;
+    width:800px;
+    border-radius: 70px;
+    color: blue;
+}
+
+table.product_update_form tr td{
+   padding: 10px 20px 20px 35px;
+
+}
+
+table.product_update_form tr label{
+   padding-right: 30px;
+}
+
+table.product_update_form tr td input{
+   height: 28px;
+   width: 395px;
+   border-radius: 70px;
+   margin-right: 10px;
+   border: 3px solid blue;
+}
+
+table.product_update_form tr td input#image{
+   border: none;
+   font-size: 18px;
+   width:430px;
+   margin-bottom: 20px;
+   margin-top: 30px;
+}
+
+table.product_update_form tr td select{
+   height: 35px;
+   width: 400px;
+   margin-top:33px;
+   border-radius: 70px;
+}
+
+button.prod_update_submit{
+     position: fixed;
+     margin-left:1300px;
+     margin-top:625px;
+     font-size: 28px;
+     padding: 10px 20px 10px 20px;
+     border-radius: 70px;
+     background-color: blue;
+     border-color: blue;
+     box-shadow: 5px 5px 10px;
+     cursor: pointer;
+     color: white;
+}
+
+button.prod_update_submit:hover{
+   font-size: 30px;
+}
+
+
+/*-------------------- view  categories  css ------------------*/
+
+div.categories_header{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+    padding: 0px; 
+    line-height: 0;
+    margin-bottom: 20px;
+    border: 7px solid blue ;
+    border-radius: 10px;
+}
+
+div.categories_header h3{
+    margin-left: 560px;
+}
+
+button.create_category_btn{
+    margin-left: 50px;
+    padding: 0px 10px 0px 10px;
+    font-size: 35px;
+    border-radius: 10px;
+    border: 2px solid;
+   
+}
+
+button.create_category_btn:hover{
+    background-color: greenyellow;
+    cursor:pointer;
+    box-shadow: 5px 5px 10px;
+}
+
+table.categories{
+    margin-left: 100px;
+    margin-top:20px;
+    font-size: 25px;
+    border-collapse: separate; 
+    border-spacing: 0 20px ; 
+}
+
+
+table.categories tr td.category{
+    padding: 10px 200px 10px 10px;
+    border: 5px solid rgb(0, 0, 0);
+    
+}
+
+table.categories tr td button.update-button{
+    font-size: 35px;
+    margin-left:165px;
+    padding: 0px 30px 0px 30px;
+    border-radius: 30px;
+}
+
+table.categories tr td button.update-button:hover{
+    cursor:pointer;
+    background-color: blue;
+    box-shadow: 5px 5px 10px;
+    color: white;
+}
+
+table.categories tr td button.delete-category{
+    background: none;
+    border: none;
+    color: #ff0000; 
+    font-size: 38px; 
+    cursor: pointer;
+    position:fixed;
+    margin: 0;
+   position:absolute;
+}
+
+table.categories tr td button.delete-category:hover{
+    color: #cc0000;
+}
+
+
+/*--------------------- view category_creation css -------------------*/
+
+
+.categ_creation_header{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+    padding: 0px; 
+    line-height: 0;
+    margin-bottom: 20px;
+    border: 7px solid blue ;
+    border-radius: 10px;
+}
+
+.categ_creation_header h3{
+    margin-left: 600px;
+}
+
+table.category_creation_form{
+    
+    border: 7px solid blue;
+    position:fixed;
+    margin-left: 450px;
+    margin-top:250px;
+    font-size: 26px;
+    width:800px;
+    border-radius: 70px;
+    color: blue;
+}
+
+table.category_creation_form tr td{
+   padding: 15px 20px 20px 35px;
+
+}
+
+table.category_creation_form tr label{
+   padding-right: 30px;
+}
+
+table.category_creation_form tr td input{
+   height: 28px;
+   width: 395px;
+   border-radius: 70px;
+   margin-right: 10px;
+   border: 3px solid blue;
+}
+
+button.categ_creation_submit{
+     position: fixed;
+     margin-left:700px;
+     margin-top:400px;
+     font-size: 28px;
+     padding: 10px 20px 10px 20px;
+     border-radius: 70px;
+     background-color: greenyellow;
+     border-color: greenyellow;
+     box-shadow: 5px 5px 10px;
+     cursor: pointer;
+     
+}
+
+button.categ_creation_submit:hover{
+   font-size: 30px;
+} 
+
+
+
+
+
+
+/*-------------------- view category_update css --------------------*/
+
+
+.categ_update_header{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+    padding: 0px; 
+    line-height: 0;
+    margin-bottom: 20px;
+    border: 7px solid blue ;
+    border-radius: 10px;
+}
+
+.categ_update_header h3{
+    margin-left: 600px;
+}
+
+table.category_update_form{
+    
+    border: 7px solid blue;
+    position:fixed;
+    margin-left: 450px;
+    margin-top:250px;
+    font-size: 26px;
+    width:800px;
+    border-radius: 70px;
+    color: blue;
+}
+
+table.category_update_form tr td{
+   padding: 15px 20px 20px 35px;
+
+}
+
+table.category_update_form tr label{
+   padding-right: 30px;
+}
+
+table.category_update_form tr td input{
+   height: 28px;
+   width: 395px;
+   border-radius: 70px;
+   margin-right: 10px;
+   border: 3px solid blue;
+}
+
+button.categ_update_submit{
+     position: fixed;
+     margin-left:700px;
+     margin-top:400px;
+     font-size: 28px;
+     padding: 10px 20px 10px 20px;
+     border-radius: 70px;
+     background-color: blue;
+     border-color: blue;
+     box-shadow: 5px 5px 10px;
+     cursor: pointer;
+     color: white;
+}
+
+button.categ_update_submit:hover{
+   font-size: 30px;
+} 
+
+
+
+
+
+
+
+
+
+
